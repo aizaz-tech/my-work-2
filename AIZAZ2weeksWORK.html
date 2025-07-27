@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aizaz's Info Page</title>
+  <style>
+    body{
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header{
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav{
+      background-color: #e0e0e0;
+      text-align: center;
+      padding: 10px;
+    }
+    .nav-link{
+      color: #0077cc;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    .nav-link:hover{
+      text-decoration: underline;
+      color: #004080;
+    }
+    section{
+      margin: 20px;
+      padding: 20px;
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+    h2{
+      color: #0077cc;
+    }
+    footer{
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+    form input,
+    form textarea{
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button{
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    form button:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aizaz Ahmad</h1>
+  </header>
+
+  <nav>
+    <a href="#bio" class="nav-link">Bio</a> |
+    <a href="#hobbies" class="nav-link">Hobbies</a> |
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <section id="bio">
+    <h2>About Me</h2>
+    <p>Hi, I'm Aizaz. I'm passionate about AI and programming. Currently studying at PAF IAST, Haripur.</p>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li>Playing football</li>
+      <li>Traveling</li>
+      <li>gathering with friends</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <label>Your Name:</label><br>
+      <input type="text" name="name" required><br><br>
+
+      <label>Your Message:</label><br>
+      <textarea name="message" rows="4" cols="30" required></textarea><br><br>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Aizaz</p>
+  </footer>
+
+</body>
+</html>
