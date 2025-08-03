@@ -1,0 +1,319 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #f4f4f4;
+      height: 300px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 30px;
+      background: #e2e2e2;
+    }
+
+    .feature {
+      flex: 1 1 200px;
+      margin: 10px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background: #fafafa;
+    }
+
+    .gallery div {
+      background: #ccc;
+      height: 100px;
+      border-radius: 8px;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        height: auto;
+        padding: 40px 10px;
+      }
+
+      footer {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>My Landing Page</h2>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to My Responsive Site</h1>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Fast</h3>
+      <p>Speedy performance for all users</p>
+    </div>
+    <div class="feature">
+      <h3>Responsive</h3>
+      <p>Looks great on all screen sizes</p>
+    </div>
+    <div class="feature">
+      <h3>Modern</h3>
+      <p>Built with Flexbox and Grid</p>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </section>
+
+  <footer>
+    <div>Contact Us</div>
+    <div>&copy; 2025 My Company</div>
+  </footer>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aizaz's Info Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f8fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #e0e0e0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 10px;
+    }
+
+    .nav-link {
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+      color: #004080;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+    }
+
+    h2 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    /* Flexbox for hobbies list */
+    .hobbies-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      list-style-type: none;
+    }
+
+    .hobbies-list li {
+      background-color: #e0e0e0;
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    /* Form styling */
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #0077cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    form button:hover {
+      background-color: #005fa3;
+    }
+
+    /* Grid layout for footer */
+    footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      background-color: #0077cc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      footer {
+        grid-template-columns: 1fr;
+      }
+
+      .hobbies-list {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aizaz Ahmad</h1>
+  </header>
+
+  <nav>
+    <a href="#bio" class="nav-link">Bio</a>
+    <a href="#hobbies" class="nav-link">Hobbies</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+
+  <main>
+    <section id="bio">
+      <h2>About Me</h2>
+      <p>Hi, I'm Aizaz. I'm passionate about AI and programming. Currently studying at PAF IAST, Haripur.</p>
+    </section>
+
+    <section id="hobbies">
+      <h2>Hobbies</h2>
+      <ul class="hobbies-list">
+        <li>Playing football</li>
+        <li>Traveling</li>
+        <li>Gathering with friends</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label>Your Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Your Message:</label><br>
+        <textarea name="message" rows="4" cols="30" required></textarea><br><br>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div>© 2025 Aizaz</div>
+    <div>All rights reserved</div>
+  </footer>
+
+</body>
+</html>
